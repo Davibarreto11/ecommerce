@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Aside() {
   return (
-    <aside className="absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-blue-900 duration-300 ease-linear lg:static lg:translate-x-0 -translate-x-full">
+    <aside className="absolute left-0 top-0 z-9999 flex h-screen w-72 flex-col overflow-y-hidden bg-blue-950 duration-300 ease-linear lg:static lg:translate-x-0 -translate-x-full">
       <div className="flex items-center justify-between gap-2 px-6 py-5 lg:py-6">
         <a href="#">
-          <Image src={require("@/assets/favicon-32x32.png")} alt="Logo" />
+          <Image className="w-44" src={require("@/assets/logo-white.png")} alt="Logo" />
         </a>
 
         <button className="block lg:hidden">
@@ -28,13 +28,13 @@ export default function Aside() {
       <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
         <nav className="mt-5 px-4 py-4 lg:mt-9 lg:px-6">
           <div>
-            <h3 className="mb-4 ml-4 text-sm font-medium text-white text-bodydark2">
+            <h3 className="mb-4 ml-4 text-sm font-medium text-gray-500 text-bodydark2">
               MENU
             </h3>
 
-            <ul className="mb-6 flex flex-col gap-1.5">
+            <ul className="mb-6 flex flex-col gap-1">
               <li>
-                <a className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark">
+                <a className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark">
                   <svg
                     className="fill-current"
                     width="18"
@@ -79,10 +79,10 @@ export default function Aside() {
                 </a>
 
                 <div className="translate transform overflow-hidden hidden">
-                  <ul className="mb-5.5 mt-4 flex flex-col gap-2.5 pl-6">
+                  <ul className="mb-5.5 mt-4 flex flex-col gap-2 pl-6">
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white !text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white !text-white"
                         href="index.html"
                       >
                         eCommerce
@@ -90,7 +90,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="analytics.html"
                       >
                         Analytics
@@ -101,7 +101,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="marketing.html"
                       >
                         Marketing
@@ -112,7 +112,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="crm.html"
                       >
                         CRM
@@ -123,7 +123,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="stocks.html"
                       >
                         Stocks
@@ -138,7 +138,7 @@ export default function Aside() {
 
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="#"
                 >
                   <svg
@@ -159,7 +159,7 @@ export default function Aside() {
               </li>
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="#"
                 >
                   <svg
@@ -184,7 +184,7 @@ export default function Aside() {
               </li>
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="#"
                 >
                   <svg
@@ -245,10 +245,10 @@ export default function Aside() {
                   </svg>
                 </a>
                 <div className="translate transform overflow-hidden hidden">
-                  <ul className="mb-5.5 mt-4 flex flex-col gap-2.5 pl-6">
+                  <ul className="mb-5.5 mt-4 flex flex-col gap-2 pl-6">
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="task-list.html"
                       >
                         List
@@ -259,7 +259,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="task-kanban.html"
                       >
                         Kanban
@@ -274,7 +274,7 @@ export default function Aside() {
 
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="#"
                 >
                   <svg
@@ -325,10 +325,10 @@ export default function Aside() {
                 </a>
 
                 <div className="translate transform overflow-hidden hidden">
-                  <ul className="mb-5.5 mt-4 flex flex-col gap-2.5 pl-6">
+                  <ul className="mb-5.5 mt-4 flex flex-col gap-2 pl-6">
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="#"
                       >
                         Form Elements
@@ -336,7 +336,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="#"
                       >
                         Pro Form Elements
@@ -347,7 +347,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="#"
                       >
                         Form Layout
@@ -355,7 +355,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="#"
                       >
                         Pro Form Layout
@@ -369,7 +369,7 @@ export default function Aside() {
               </li>
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="#"
                 >
                   <svg
@@ -416,10 +416,10 @@ export default function Aside() {
                 </a>
 
                 <div className="translate transform overflow-hidden hidden">
-                  <ul className="mb-5.5 mt-4 flex flex-col gap-2.5 pl-6">
+                  <ul className="mb-5.5 mt-4 flex flex-col gap-2 pl-6">
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="tables.html"
                       >
                         Tables
@@ -427,7 +427,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="pro-tables.html"
                       >
                         Pro Tables
@@ -441,7 +441,7 @@ export default function Aside() {
               </li>
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="#"
                 >
                   <svg
@@ -496,10 +496,10 @@ export default function Aside() {
                 </a>
 
                 <div className="translate transform overflow-hidden hidden">
-                  <ul className="mb-5.5 mt-4 flex flex-col gap-2.5 pl-6">
+                  <ul className="mb-5.5 mt-4 flex flex-col gap-2 pl-6">
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="settings.html"
                       >
                         Settings
@@ -507,7 +507,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="file-manager.html"
                       >
                         File Manager
@@ -518,7 +518,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="data-tables.html"
                       >
                         Data Tables
@@ -529,7 +529,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="pricing-tables.html"
                       >
                         Pricing Tables
@@ -540,7 +540,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="error-page.html"
                       >
                         Error Page
@@ -551,7 +551,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="faq.html"
                       >
                         Faq's
@@ -562,7 +562,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="team.html"
                       >
                         Teams
@@ -573,7 +573,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="terms-conditions.html"
                       >
                         Terms &amp; Conditions
@@ -584,7 +584,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="mail-success.html"
                       >
                         Mail Success
@@ -600,14 +600,14 @@ export default function Aside() {
           </div>
 
           <div>
-            <h3 className="mb-4 ml-4 text-sm font-medium  text-white text-bodydark2">
+            <h3 className="mb-4 ml-4 text-sm font-medium text-gray-500 text-bodydark2">
               SUPPORT
             </h3>
 
-            <ul className="mb-6 flex flex-col gap-1.5">
+            <ul className="mb-6 flex flex-col gap-1">
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="messages.html"
                 >
                   <svg
@@ -635,7 +635,7 @@ export default function Aside() {
 
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="inbox.html"
                 >
                   <svg
@@ -663,7 +663,7 @@ export default function Aside() {
               </li>
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="invoice.html"
                 >
                   <svg
@@ -725,14 +725,14 @@ export default function Aside() {
           </div>
 
           <div>
-            <h3 className="mb-4 ml-4 text-sm font-medium  text-white text-bodydark2">
+            <h3 className="mb-4 ml-4 text-sm font-medium text-gray-500 text-bodydark2">
               OTHERS
             </h3>
 
-            <ul className="mb-6 flex flex-col gap-1.5">
+            <ul className="mb-6 flex flex-col gap-1">
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="#"
                 >
                   <svg
@@ -786,7 +786,7 @@ export default function Aside() {
                   <ul className="mb-3 mt-4 flex flex-col gap-2 pl-6">
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="basic-chart.html"
                       >
                         Basic Chart
@@ -794,7 +794,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="advanced-chart.html"
                       >
                         Advanced Chart
@@ -809,7 +809,7 @@ export default function Aside() {
 
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="#"
                 >
                   <svg
@@ -867,7 +867,7 @@ export default function Aside() {
                   <ul className="mb-3 mt-4 flex flex-col gap-2 pl-6">
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="accordion.html"
                       >
                         Accordion
@@ -879,7 +879,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="alerts.html"
                       >
                         Alerts
@@ -888,7 +888,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="avatars.html"
                       >
                         Avatars
@@ -900,7 +900,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="badge.html"
                       >
                         Badge
@@ -912,7 +912,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="breadcrumb.html"
                       >
                         Breadcrumb
@@ -924,7 +924,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="buttons.html"
                       >
                         Buttons
@@ -933,7 +933,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="buttons-group.html"
                       >
                         Buttons Group
@@ -945,7 +945,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="cards.html"
                       >
                         Cards
@@ -957,7 +957,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="carousel.html"
                       >
                         Carousel
@@ -969,7 +969,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="dropdowns.html"
                       >
                         Dropdowns
@@ -981,7 +981,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium  text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="images.html"
                       >
                         Images
@@ -993,7 +993,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="list.html"
                       >
                         List
@@ -1005,7 +1005,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-white text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="modals.html"
                       >
                         Modals
@@ -1017,7 +1017,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="notifications.html"
                       >
                         Notifications
@@ -1029,7 +1029,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="pagination.html"
                       >
                         Pagination
@@ -1041,7 +1041,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="popovers.html"
                       >
                         Popovers
@@ -1053,7 +1053,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="progress.html"
                       >
                         Progress
@@ -1065,7 +1065,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="spinners.html"
                       >
                         Spinners
@@ -1077,7 +1077,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="tabs.html"
                       >
                         Tabs
@@ -1088,7 +1088,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="tooltips.html"
                       >
                         Tooltips
@@ -1100,7 +1100,7 @@ export default function Aside() {
 
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="videos.html"
                       >
                         Videos
@@ -1114,7 +1114,7 @@ export default function Aside() {
               </li>
               <li>
                 <a
-                  className="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
+                  className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
                   href="#"
                 >
                   <svg
@@ -1168,7 +1168,7 @@ export default function Aside() {
                   <ul className="mb-3 mt-4 flex flex-col gap-2 pl-6">
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="signin.html"
                       >
                         Sign In
@@ -1176,7 +1176,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="signup.html"
                       >
                         Sign Up
@@ -1184,7 +1184,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="reset-password.html"
                       >
                         Reset Password
@@ -1195,7 +1195,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="coming-soon.html"
                       >
                         Coming Soon
@@ -1206,7 +1206,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="two-step-verification.html"
                       >
                         2 Step Verification
@@ -1217,7 +1217,7 @@ export default function Aside() {
                     </li>
                     <li>
                       <a
-                        className="group relative flex items-center gap-2.5 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
+                        className="group relative flex items-center gap-2 rounded-md px-4 font-medium text-bodydark2 duration-300 ease-in-out hover:text-white"
                         href="under-maintenance.html"
                       >
                         Under Maintenance
