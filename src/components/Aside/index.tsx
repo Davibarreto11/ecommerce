@@ -1,19 +1,39 @@
+import { useState } from "react";
 import Image from "next/image";
 
-export default function Aside() {
+interface AsideProps {
+  sideBarVisible: Boolean;
+}
+
+export default function Aside({ visible }: any) {
+  const [sideBarVisible, setSideBarVisible] = useState(Boolean);
   return (
-    <aside className="absolute left-0 top-0 z-9999 flex h-screen w-72 flex-col overflow-y-hidden bg-blue-950 duration-300 ease-linear lg:static lg:translate-x-0 -translate-x-full">
+    <aside
+      className={`absolute left-0 top-0 z-50 flex h-screen w-72 flex-col overflow-y-hidden bg-[#81b398] duration-300 ease-linear lg:static lg:translate-x-0 -translate-x-full ${
+        visible ? "translate-x-0" : "-translate-x-full"
+      }`}
+    >
       <div className="flex items-center justify-between gap-2 px-6 py-5 lg:py-6">
         <a href="#">
-          <Image className="w-44" src={require("@/assets/logo-white.png")} alt="Logo" />
+          <Image
+            className="w-40"
+            src={require("@/assets/logo-white.png")}
+            alt="Logo"
+          />
         </a>
 
-        <button className="block lg:hidden">
+        <button
+          onClick={() => {
+            setSideBarVisible(!sideBarVisible);
+          }}
+          className="block lg:hidden"
+        >
           <svg
             className="fill-current"
             width="20"
             height="18"
             viewBox="0 0 20 18"
+            color="#cccc"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -26,7 +46,7 @@ export default function Aside() {
       </div>
 
       <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
-        <nav className="mt-5 px-4 py-4 lg:mt-9 lg:px-6">
+        <nav className="mt-5 px-4 py-4 lg:mt-9 lg:px-6 overflow-hidden">
           <div>
             <h3 className="mb-4 ml-4 text-sm font-medium text-gray-500 text-bodydark2">
               MENU
@@ -1232,21 +1252,6 @@ export default function Aside() {
             </ul>
           </div>
         </nav>
-
-        <div className="mx-auto mb-10 w-full max-w-60 rounded-sm border border-strokedark bg-boxdark px-4 py-6 text-center shadow-default">
-          <h3 className="mb-1 font-semibold text-white">TailAdmin Pro</h3>
-          <p className="mb-4 text-xs">
-            Get All Dashboards and 300+ UI Elements
-          </p>
-          <a
-            href="https://tailadmin.com/pricing"
-            target="_blank"
-            rel="nofollow"
-            className="flex items-center justify-center rounded-md bg-primary p-2 text-white hover:bg-opacity-95"
-          >
-            Purchase Now
-          </a>
-        </div>
       </div>
     </aside>
   );
