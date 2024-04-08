@@ -1,17 +1,58 @@
+import { useState } from "react";
 import Image from "next/image";
 
-import user01 from "@/assets/user/user-02.png";
-import { useState } from "react";
-import Profile from "./Profile";
-import Message from "./Message";
-import Notification from "./Notification";
-import Aside from "../Aside";
+import Profile from "@/components/Header/Profile";
+import Message from "@/components/Header/Message";
+import Notification from "@/components/Header/Notification";
+import Menu from "@/components/Menu";
 
-export default function Header() {
+export default function Navigation({ children }: any) {
   const [sideBarVisible, setSideBarVisible] = useState(Boolean);
   return (
     <div className="flex h-screen overflow-y-hidden">
-      <Aside visible={sideBarVisible} />
+      <aside
+        className={`absolute left-0 top-0 z-50 flex h-screen w-72 flex-col overflow-y-hidden bg-[#81b398] duration-300 ease-linear lg:static lg:translate-x-0 -translate-x-full ${
+          sideBarVisible ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <div className="flex items-center justify-between gap-2 px-6 py-5 lg:py-6">
+          <a href="#">
+            <Image
+              className="w-40"
+              src={require("@/assets/logo-white.png")}
+              alt="Logo"
+            />
+          </a>
+
+          <button
+            onClick={() => {
+              setSideBarVisible(!sideBarVisible);
+            }}
+            className="block lg:hidden"
+          >
+            <svg
+              className="fill-current"
+              width="20"
+              height="18"
+              viewBox="0 0 20 18"
+              color="#cccc"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19 8.175H2.98748L9.36248 1.6875C9.69998 1.35 9.69998 0.825 9.36248 0.4875C9.02498 0.15 8.49998 0.15 8.16248 0.4875L0.399976 8.3625C0.0624756 8.7 0.0624756 9.225 0.399976 9.5625L8.16248 17.4375C8.31248 17.5875 8.53748 17.7 8.76248 17.7C8.98748 17.7 9.17498 17.625 9.36248 17.475C9.69998 17.1375 9.69998 16.6125 9.36248 16.275L3.02498 9.8625H19C19.45 9.8625 19.825 9.4875 19.825 9.0375C19.825 8.55 19.45 8.175 19 8.175Z"
+                fill=""
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <div className="no-scrollbar flex flex-col overflow-y-auto duration-300 ease-linear">
+          <nav className="mt-5 px-4 py-4 lg:mt-9 lg:px-6 overflow-hidden">
+            <Menu />
+          </nav>
+        </div>
+      </aside>
       <div className="relative flex flex-1 flex-col">
         <header className="sticky top-0 z-40 flex w-full bg-white drop-shadow-2xl">
           <div className="flex flex-grow items-center justify-between px-4 py-4 shadow-lg md:px-6 2xl:px-11">
@@ -27,11 +68,11 @@ export default function Header() {
                 <svg
                   xmlns="https://www.w3.org/2000/svg"
                   className="
-                block
-                h-6
-                w-6
-                cursor-pointer
-                lg:hidden"
+                  block
+                  h-6
+                  w-6
+                  cursor-pointer
+                  lg:hidden"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -49,7 +90,7 @@ export default function Header() {
                 method="POST"
               >
                 <div className="relative">
-                  <button className="absolute left-0 top-[4px] -translate-x-1/2">
+                  <button className="absolute left-0 top-[3px] -translate-x-1/2">
                     <svg
                       className="fill-body hover:fill-primary"
                       width="20"
@@ -75,7 +116,7 @@ export default function Header() {
                   <input
                     type="text"
                     placeholder="Type to search..."
-                    className="w-full bg-transparent pl-9 pr-4 focus:outline-none xl:w-125"
+                    className="w-full bg-transparent pl-6 pr-4 focus:outline-none xl:w-125"
                   />
                 </div>
               </form>
@@ -135,6 +176,7 @@ export default function Header() {
             </div>
           </div>
         </header>
+        {children}
       </div>
     </div>
   );

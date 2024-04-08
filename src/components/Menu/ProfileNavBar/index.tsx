@@ -1,9 +1,11 @@
-export default function Profile() {
+import Link from "next/link";
+
+export default function ProfileNavBar() {
   return (
     <li>
-      <a
-        className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium  text-white text-bodydark1 duration-300 ease-in-out hover:bg-graydark"
-        href="#"
+      <Link
+        className="group relative flex items-center gap-2 rounded-sm px-4 py-2 font-medium text-white text-bodydark1 duration-300 ease-in-out  hover:bg-green-100 hover:text-black"
+        href="/profile"
       >
         <svg
           className="fill-current"
@@ -23,7 +25,7 @@ export default function Profile() {
           ></path>
         </svg>
         Profile
-      </a>
+      </Link>
     </li>
   );
 }

@@ -1,10 +1,6 @@
-import Calendar from "./Calendar";
-import Dashboard from "./Dashboard";
-import Forms from "./Forms";
-import Pages from "./Pages";
-import Profile from "./Profile";
-import Tables from "./Tables";
-import Task from "./Task";
+import Dashboard from "./DashboardNavBar";
+import Profile from "./ProfileNavBar";
+import Tables from "./TablesNavBar";
 
 export default function Menu() {
   return (
@@ -15,12 +11,8 @@ export default function Menu() {
 
       <ul className="mb-6 flex flex-col gap-1">
         <Dashboard />
-        <Calendar />
-        <Profile />
-        <Task />
-        <Forms />
         <Tables />
-        <Pages />
+        <Profile />
       </ul>
     </div>
   );
