@@ -1,3 +1,5 @@
+import Chart from "./Chart";
+
 export default function Profit() {
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white p-7 shadow-default xl:col-span-4">
@@ -38,6 +40,7 @@ export default function Profit() {
           </div>
         </div>
       </div>
+      <Chart />
     </div>
   );
 }

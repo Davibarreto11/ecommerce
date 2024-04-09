@@ -1,3 +1,5 @@
+import Chart from "./Chart";
+
 export default function Analytics() {
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7 shadow-default sm:px-7 xl:col-span-5">
@@ -38,7 +40,7 @@ export default function Analytics() {
           </div>
         </div>
       </div>
-
+      <Chart />
       <div className="-mx-8 flex flex-wrap items-center justify-center gap-y-3">
         <div className="w-full px-8 sm:w-1/2">
           <div className="flex w-full items-center">

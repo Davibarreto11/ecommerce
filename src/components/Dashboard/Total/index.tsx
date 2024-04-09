@@ -1,3 +1,5 @@
+import Chart from "./Chart";
+
 export default function Total() {
   return (
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7 shadow-default sm:px-7 xl:col-span-8">
@@ -8,7 +10,9 @@ export default function Total() {
               <span className="block h-3 w-full max-w-3 rounded-full"></span>
             </span>
             <div className="w-full">
-              <p className="font-semibold text-[#81b390] text-lg">Total Revenue</p>
+              <p className="font-semibold text-[#81b390] text-lg">
+                Total Revenue
+              </p>
               <p className="text-sm font-medium">12.04.2022 - 12.05.2022</p>
             </div>
           </div>
@@ -17,7 +21,9 @@ export default function Total() {
               <span className="block h-3 w-full max-w-3 rounded-full"></span>
             </span>
             <div className="w-full">
-              <p className="font-semibold text-green-700 text-lg">Total Sales</p>
+              <p className="font-semibold text-green-700 text-lg">
+                Total Sales
+              </p>
               <p className="text-sm font-medium">12.04.2022 - 12.05.2022</p>
             </div>
           </div>
@@ -38,9 +44,7 @@ export default function Total() {
       </div>
 
       <div>
-        <div id="chartOne" className="-ml-5">
-
-        </div>
+        <Chart />
       </div>
     </div>
   );
