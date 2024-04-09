@@ -1,4 +1,4 @@
-import Home from "@/pages/index";
+import Home from "@/pages/home/index";
 import Patients from "../patients";
 
 export default function Profile() {

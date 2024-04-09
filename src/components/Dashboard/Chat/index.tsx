@@ -7,7 +7,7 @@ export default function Chat() {
 
       <div>
         <a
-          href="messages.html"
+          href="#"
           className="flex items-center gap-5 px-7 py-3 hover:bg-gray-100 dark:hover:bg-meta-4"
         >
           <div className="relative h-14 w-14 rounded-full">
@@ -31,7 +31,7 @@ export default function Chat() {
           </div>
         </a>
         <a
-          href="messages.html"
+          href="#"
           className="flex items-center gap-5 px-7 py-3 hover:bg-gray-100 dark:hover:bg-meta-4"
         >
           <div className="relative h-14 w-14 rounded-full">
@@ -52,7 +52,7 @@ export default function Chat() {
           </div>
         </a>
         <a
-          href="messages.html"
+          href="#"
           className="flex items-center gap-5 px-7 py-3 hover:bg-gray-100"
         >
           <div className="relative h-14 w-14 rounded-full">
@@ -71,7 +71,7 @@ export default function Chat() {
           </div>
         </a>
         <a
-          href="messages.html"
+          href="#"
           className="flex items-center gap-5 px-7 py-3 hover:bg-gray-100"
         >
           <div className="relative h-14 w-14 rounded-full">
@@ -95,7 +95,7 @@ export default function Chat() {
           </div>
         </a>
         <a
-          href="messages.html"
+          href="#"
           className="flex items-center gap-5 px-7 py-3 hover:bg-gray-100"
         >
           <div className="relative h-14 w-14 rounded-full">
@@ -114,7 +114,7 @@ export default function Chat() {
           </div>
         </a>
         <a
-          href="messages.html"
+          href="#"
           className="flex items-center gap-5 px-7 py-3 hover:bg-gray-100"
         >
           <div className="relative h-14 w-14 rounded-full">
