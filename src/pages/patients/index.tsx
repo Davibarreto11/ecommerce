@@ -1,5 +1,5 @@
 import Navigation from "@/components/Navigation";
-import Table from "@/components/Patient/Table";
+import Table from "@/components/Table";
 import Image from "next/image";
 import { useState } from "react";
 
