@@ -19,7 +19,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -30,7 +30,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -40,7 +40,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -50,7 +50,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -61,7 +61,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -72,7 +72,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -83,7 +83,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -93,7 +93,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -104,7 +104,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -114,7 +114,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -125,7 +125,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -136,7 +136,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -147,7 +147,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -158,7 +158,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -169,7 +169,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -180,7 +180,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -191,7 +191,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -201,7 +201,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -211,7 +211,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -222,7 +222,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -233,7 +233,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -244,7 +244,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -255,7 +255,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -266,7 +266,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -277,7 +277,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -288,7 +288,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -299,7 +299,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -310,7 +310,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -321,7 +321,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -332,7 +332,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -343,7 +343,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -354,7 +354,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -365,7 +365,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -375,7 +375,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -385,7 +385,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -395,7 +395,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -405,7 +405,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -415,7 +415,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -426,7 +426,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -437,7 +437,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -448,7 +448,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -459,7 +459,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -470,7 +470,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -481,7 +481,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -491,7 +491,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -502,7 +502,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -513,7 +513,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -524,7 +524,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
             <path
@@ -534,7 +534,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -545,7 +545,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
               cursor="pointer"
             ></path>
@@ -556,7 +556,7 @@ export default function RegionsLabel() {
               fill-opacity="1"
               stroke="none"
               stroke-width="0"
-              fill-rule="evenodd"
+              fillRule="evenodd"
               className="jvm-region jvm-element"
             ></path>
           </g>
