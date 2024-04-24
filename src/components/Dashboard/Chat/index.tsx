@@ -20,7 +20,7 @@ export default function Chat() {
               <h5 className="font-medium text-black">Devid Heilo</h5>
               <p>
                 <span className="text-sm font-medium text-black">
-                  Hello, how are you?
+                  Olá, como vai você?
                 </span>
                 <span className="text-xs"> . 12 min</span>
               </p>
@@ -44,7 +44,7 @@ export default function Chat() {
               <h5 className="font-medium">Henry Fisher</h5>
               <p>
                 <span className="text-sm font-medium">
-                  I am waiting for you
+                  I estou esperando por você
                 </span>
                 <span className="text-xs"> . 5:54 PM</span>
               </p>
@@ -64,7 +64,9 @@ export default function Chat() {
             <div>
               <h5 className="font-medium">Wilium Smith</h5>
               <p>
-                <span className="text-sm font-medium">Where are you now?</span>
+                <span className="text-sm font-medium">
+                  Onde você está agora?
+                </span>
                 <span className="text-xs"> . 10:12 PM</span>
               </p>
             </div>
@@ -84,9 +86,9 @@ export default function Chat() {
               <h5 className="font-medium text-black">Henry Deco</h5>
               <p>
                 <span className="text-sm font-medium text-black">
-                  Thank you so much!
+                  Muito obrigado!
                 </span>
-                <span className="text-xs"> . Sun</span>
+                <span className="text-xs"> . Sáb</span>
               </p>
             </div>
             <div className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-600">
@@ -107,8 +109,10 @@ export default function Chat() {
             <div>
               <h5 className="font-medium">Jubin Jack</h5>
               <p>
-                <span className="text-sm font-medium">I really love that!</span>
-                <span className="text-xs"> . Oct 23</span>
+                <span className="text-sm font-medium">
+                  Eu realmente amo isso!
+                </span>
+                <span className="text-xs"> . Out 23</span>
               </p>
             </div>
           </div>
@@ -126,8 +130,10 @@ export default function Chat() {
             <div>
               <h5 className="font-medium">Wilium Smith</h5>
               <p>
-                <span className="text-sm font-medium">Where are you now?</span>
-                <span className="text-xs"> . Sep 20</span>
+                <span className="text-sm font-medium">
+                  Onde você está agora?
+                </span>
+                <span className="text-xs"> . Set 20</span>
               </p>
             </div>
           </div>

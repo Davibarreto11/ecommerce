@@ -5,7 +5,7 @@ export default function Profit() {
     <div className="col-span-12 rounded-sm border border-stroke bg-white p-7 shadow-default xl:col-span-4">
       <div className="mb-4 justify-between gap-4 sm:flex">
         <div>
-          <h4 className="text-xl font-bold text-black">Profit this week</h4>
+          <h4 className="text-xl font-bold text-black">Lucro da semana</h4>
         </div>
         <div>
           <div className="relative z-20 inline-block">
@@ -14,8 +14,8 @@ export default function Profit() {
               id="#"
               className="relative z-20 inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none"
             >
-              <option value="">This Week</option>
-              <option value="">Last Week</option>
+              <option value="">Esta semana</option>
+              <option value="">Semana passada</option>
             </select>
             <span className="absolute right-3 top-1/2 z-10 -translate-y-1/2">
               <svg

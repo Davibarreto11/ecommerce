@@ -11,7 +11,7 @@ export default function Total() {
             </span>
             <div className="w-full">
               <p className="font-semibold text-[#81b390] text-lg">
-                Total Revenue
+                Total de revendas
               </p>
               <p className="text-sm font-medium">12.04.2022 - 12.05.2022</p>
             </div>
@@ -22,7 +22,7 @@ export default function Total() {
             </span>
             <div className="w-full">
               <p className="font-semibold text-green-700 text-lg">
-                Total Sales
+                Total de vendas
               </p>
               <p className="text-sm font-medium">12.04.2022 - 12.05.2022</p>
             </div>
@@ -31,13 +31,13 @@ export default function Total() {
         <div className="flex w-full max-w-44 justify-end">
           <div className="inline-flex items-center rounded-md bg-gray-100 p-1">
             <button className="rounded bg-white px-3 py-1 text-xs font-medium text-black shadow-card hover:bg-white hover:shadow-card">
-              Day
+              Dia
             </button>
             <button className="rounded px-3 py-1 text-xs font-medium text-black hover:bg-white hover:shadow-card">
-              Week
+              Semana
             </button>
             <button className="rounded px-3 py-1 text-xs font-medium text-black hover:bg-white hover:shadow-card">
-              Month
+              Mês
             </button>
           </div>
         </div>

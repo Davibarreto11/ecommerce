@@ -22,6 +22,7 @@ import { addDays, format } from "date-fns";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Calendar } from "../ui/calendar";
 import { CalendarIcon } from "@radix-ui/react-icons";
+import { ptBR } from "date-fns/locale";
 
 export default function AdvancedFilters() {
   const [birthDay, setBirthDay] = useState();
@@ -35,24 +36,24 @@ export default function AdvancedFilters() {
       </DialogTrigger>
 
       <DialogContent>
-        <DialogHeader>Filters</DialogHeader>
-        <DialogDescription>Advanced Filters</DialogDescription>
+        <DialogHeader>Filtros</DialogHeader>
+        <DialogDescription>Filtros Avançados</DialogDescription>
 
         <form className="space-y-4">
           <div className="flex justify-between items-center">
             <div>
-              <Label>Patient</Label>
+              <Label>Paciente</Label>
               <Input placeholder="Transaferência" />
             </div>
             <div style={{ width: "40%" }}>
-              <Label>Priority</Label>
+              <Label>Prioridade</Label>
               <Select onValueChange={(value: string) => setPriority(value)}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Select" />
+                  <SelectValue placeholder="Selecione" />
                 </SelectTrigger>
                 <SelectContent position="popper">
-                  <SelectItem value="0">Emergency</SelectItem>
-                  <SelectItem value="1">Urgency</SelectItem>
+                  <SelectItem value="0">Emergência</SelectItem>
+                  <SelectItem value="1">Urgência</SelectItem>
                   <SelectItem value="3">Neutro</SelectItem>
                   <SelectItem value="7">Extremo</SelectItem>
                 </SelectContent>
@@ -68,12 +69,12 @@ export default function AdvancedFilters() {
               <Label>Status</Label>
               <Select onValueChange={(value: string) => setStatus(value)}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Select" />
+                  <SelectValue placeholder="Selecione" />
                 </SelectTrigger>
                 <SelectContent position="popper">
-                  <SelectItem value="0">Waiting</SelectItem>
-                  <SelectItem value="1">Lauding</SelectItem>
-                  <SelectItem value="3">Concluded</SelectItem>
+                  <SelectItem value="0">Esperando</SelectItem>
+                  <SelectItem value="1">Laudando</SelectItem>
+                  <SelectItem value="3">Concluído</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -87,12 +88,12 @@ export default function AdvancedFilters() {
               <Label>Status</Label>
               <Select onValueChange={(value: string) => setStatus(value)}>
                 <SelectTrigger>
-                  <SelectValue placeholder="Select" />
+                  <SelectValue placeholder="Selecione" />
                 </SelectTrigger>
                 <SelectContent position="popper">
-                  <SelectItem value="0">Waiting</SelectItem>
-                  <SelectItem value="1">Lauding</SelectItem>
-                  <SelectItem value="3">Concluded</SelectItem>
+                  <SelectItem value="0">Esperando</SelectItem>
+                  <SelectItem value="1">Laudando</SelectItem>
+                  <SelectItem value="3">Concluído</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -103,8 +104,8 @@ export default function AdvancedFilters() {
               <Input placeholder="Buscar Solicitação" />
             </div>
             <div>
-              <Label>Accession number</Label>
-              <Input placeholder="Buscar Accession" />
+              <Label>Número de acesso</Label>
+              <Input placeholder="Buscar número" />
             </div>
           </div>
           <div className="flex justify-between items-center">
@@ -124,9 +125,11 @@ export default function AdvancedFilters() {
                   >
                     <CalendarIcon className="mr-2 h-4 w-4" />
                     {birthDay ? (
-                      format(birthDay, "PPP")
+                      format(birthDay, "PPP", {
+                        locale: ptBR,
+                      })
                     ) : (
-                      <span>Pick a birthDay</span>
+                      <span>Escolha a data de nascimento</span>
                     )}
                   </Button>
                 </PopoverTrigger>
@@ -137,13 +140,13 @@ export default function AdvancedFilters() {
                     }
                   >
                     <SelectTrigger>
-                      <SelectValue placeholder="Select" />
+                      <SelectValue placeholder="Selecione" />
                     </SelectTrigger>
                     <SelectContent position="popper">
-                      <SelectItem value="0">Today</SelectItem>
-                      <SelectItem value="1">Tomorrow</SelectItem>
-                      <SelectItem value="3">In 3 days</SelectItem>
-                      <SelectItem value="7">In a week</SelectItem>
+                      <SelectItem value="0">Hoje</SelectItem>
+                      <SelectItem value="1">Amanhã</SelectItem>
+                      <SelectItem value="3">Em 3 dias</SelectItem>
+                      <SelectItem value="7">Em 1 semana</SelectItem>
                     </SelectContent>
                   </Select>
                   <div className="rounded-md border">
@@ -174,10 +177,10 @@ export default function AdvancedFilters() {
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent position="popper">
-                  <SelectItem value="0">Today</SelectItem>
-                  <SelectItem value="1">Tomorrow</SelectItem>
-                  <SelectItem value="3">In 3 days</SelectItem>
-                  <SelectItem value="7">In a week</SelectItem>
+                  <SelectItem value="0">Hoje</SelectItem>
+                  <SelectItem value="1">Amanhã</SelectItem>
+                  <SelectItem value="3">Em 3 dias</SelectItem>
+                  <SelectItem value="7">Em 1 semana</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -186,11 +189,11 @@ export default function AdvancedFilters() {
           <DialogFooter>
             <DialogClose asChild>
               <Button type="button" variant="destructive">
-                Cancel
+                Cancelar
               </Button>
             </DialogClose>
-            <Button variant="destructive">Clear</Button>
-            <Button type="submit">Filter</Button>
+            <Button variant="destructive">Limpar</Button>
+            <Button type="submit">Filtrar</Button>
           </DialogFooter>
         </form>
       </DialogContent>

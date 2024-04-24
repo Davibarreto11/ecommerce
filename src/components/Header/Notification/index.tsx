@@ -36,7 +36,7 @@ export default function Notification() {
       >
         <div className="px-4 py-3">
           <h5 className="text-sm font-medium text-gray-500 text-bodydark2">
-            Notification
+            Notificações
           </h5>
         </div>
 
