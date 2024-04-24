@@ -39,7 +39,7 @@ export default function TablePatient() {
   return (
     <div className="overflow-auto">
       <div className="p-6 max-w-screen-2xl mx-auto space-y-2">
-        <h1 className="text-3xl font-medium">Patients</h1>
+        <h1 className="text-3xl font-medium">Pacientes</h1>
         <div className="flex items-center justify-between">
           <Modals />
 
@@ -48,11 +48,11 @@ export default function TablePatient() {
           <DatePicker />
 
           <Filters />
-          <Button onClick={() => setVisible(!visible)}>V</Button>
-          <AdvancedFilters />
-          <DialogPatient />
+          {/* <Button onClick={() => setVisible(!visible)}>V</Button> */}
+          {/* <AdvancedFilters /> */}
+          {/* <DialogPatient /> */}
         </div>
-        <div
+        {/* <div
           className={`bg-white rounded-md shadow-lg ${
             visible ? "flex items-center justify-between" : "hidden"
           }`}
@@ -97,21 +97,23 @@ export default function TablePatient() {
             <Button className="hover:bg-blue-700 hover:text-white">+</Button>
             <Button className="hover:bg-red-500 hover:text-white">+</Button>
           </div>
-        </div>
+        </div> */}
         <div className="bg-white rounded-md shadow-lg">
           <Table>
             <TableHeader>
-              <TableHead>
-                <Checkbox disabled />
-              </TableHead>
-              <TableHead>Patient</TableHead>
-              <TableHead>Case</TableHead>
-              <TableHead>Date</TableHead>
-              <TableHead>Priority</TableHead>
-              <TableHead>Doctor</TableHead>
-              <TableHead>Unity</TableHead>
-              <TableHead>State</TableHead>
-              <TableHead>Ações</TableHead>
+              <TableRow>
+                <TableHead>
+                  <Checkbox disabled />
+                </TableHead>
+                <TableHead>Paciente</TableHead>
+                <TableHead>Caso</TableHead>
+                <TableHead>Data</TableHead>
+                <TableHead>Prioridade</TableHead>
+                <TableHead>Médico</TableHead>
+                <TableHead>Unidade</TableHead>
+                <TableHead>Status</TableHead>
+                <TableHead>Ações</TableHead>
+              </TableRow>
             </TableHeader>
             <TableBody>
               {Array.from({ length: 20 }).map((_, i) => (
@@ -123,22 +125,22 @@ export default function TablePatient() {
                     <Dialog>
                       <DialogTrigger asChild>
                         <div className="cursor-pointer hover:border-b-2 self-stretch">
-                          Patient
+                          Paciente
                         </div>
                       </DialogTrigger>
 
                       <DialogContent>
-                        <DialogHeader>Alter Patient</DialogHeader>
-                        <DialogDescription>Alter Patient</DialogDescription>
+                        <DialogHeader>Alterar paciente</DialogHeader>
+                        <DialogDescription>Alterar paciente</DialogDescription>
 
                         <form className="space-y-4">
                           <DialogFooter>
                             <DialogClose asChild>
                               <Button type="button" variant="outline">
-                                Cancel
+                                Cancelar
                               </Button>
                             </DialogClose>
-                            <Button type="submit">Save</Button>
+                            <Button type="submit">Salvar</Button>
                           </DialogFooter>
                         </form>
                       </DialogContent>
@@ -148,22 +150,22 @@ export default function TablePatient() {
                     <Dialog>
                       <DialogTrigger asChild>
                         <div className="cursor-pointer hover:border-b-2">
-                          Case
+                          Caso
                         </div>
                       </DialogTrigger>
 
                       <DialogContent>
-                        <DialogHeader>Alter Case</DialogHeader>
-                        <DialogDescription>Alter Case</DialogDescription>
+                        <DialogHeader>Alterar Caso</DialogHeader>
+                        <DialogDescription>Alterar Caso</DialogDescription>
 
                         <form className="space-y-4">
                           <DialogFooter>
                             <DialogClose asChild>
                               <Button type="button" variant="outline">
-                                Cancel
+                                Cancelar
                               </Button>
                             </DialogClose>
-                            <Button type="submit">Save</Button>
+                            <Button type="submit">Salvar</Button>
                           </DialogFooter>
                         </form>
                       </DialogContent>
@@ -175,10 +177,10 @@ export default function TablePatient() {
                       <p className="font-light">Recebido 17:50</p>
                     </div>
                   </TableCell>
-                  <TableCell className="">Urgency</TableCell>
+                  <TableCell className="">Urgência</TableCell>
                   <TableCell className="">Lucas</TableCell>
                   <TableCell className="">Unimed</TableCell>
-                  <TableCell className="">Waiting</TableCell>
+                  <TableCell className="">Esperando </TableCell>
                   <TableCell className="flex justify-start w-[100px]">
                     <div className="mr-1 cursor-pointer bg-white rounded-md shadow-sm px-4 py-3 hover:bg-gray-100">
                       +

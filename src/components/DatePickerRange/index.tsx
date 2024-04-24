@@ -8,6 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { CalendarIcon } from "@radix-ui/react-icons";
 import { Calendar } from "@/components/ui/calendar";
+import { ptBR } from "date-fns/locale";
 
 export default function DatePickerRange() {
   const [date, setDate] = useState({
@@ -29,14 +30,21 @@ export default function DatePickerRange() {
             {date?.from ? (
               date.to ? (
                 <>
-                  {format(date.from, "LLL dd, y")} -{" "}
-                  {format(date.to, "LLL dd, y")}
+                  {format(date.from, "LLL dd, y", {
+                    locale: ptBR,
+                  })}{" "}
+                  -{" "}
+                  {format(date.to, "LLL dd, y", {
+                    locale: ptBR,
+                  })}
                 </>
               ) : (
-                format(date.from, "LLL dd, y")
+                format(date.from, "LLL dd, y", {
+                  locale: ptBR,
+                })
               )
             ) : (
-              <span>Pick a date</span>
+              <span>Escolha a data</span>
             )}
           </Button>
         </PopoverTrigger>
@@ -48,6 +56,7 @@ export default function DatePickerRange() {
             selected={date}
             onSelect={setDate}
             numberOfMonths={2}
+            locale={ptBR}
           />
         </PopoverContent>
       </Popover>

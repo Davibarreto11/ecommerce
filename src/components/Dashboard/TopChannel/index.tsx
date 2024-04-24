@@ -4,33 +4,35 @@ export default function TopChannel() {
   return (
     <div className="col-span-12 xl:col-span-8">
       <div className="rounded-sm border border-stroke bg-white px-5 pb-3 pt-6 shadow-default sm:px-7 xl:pb-1">
-        <h4 className="mb-6 text-xl font-bold text-black">Top Channels</h4>
+        <h4 className="mb-6 text-xl font-bold text-black">
+          Melhores canais de comunucação
+        </h4>
 
         <div className="flex flex-col">
           <div className="grid grid-cols-3 rounded-sm bg-gray-100 sm:grid-cols-5">
             <div className="p-3 xl:p-5">
               <h5 className="text-base font-medium text-gray-500 uppercase xsm:text-base">
-                Source
+                Canais
               </h5>
             </div>
             <div className="p-3 text-center xl:p-5">
               <h5 className="text-base font-medium text-gray-500 uppercase xsm:text-base">
-                Visitors
+                Visitantes
               </h5>
             </div>
             <div className="p-3 text-center xl:p-5">
               <h5 className="text-base font-medium text-gray-500 uppercase xsm:text-base">
-                Revenues
+                Revendas
               </h5>
             </div>
             <div className="hidden p-3 text-center sm:block xl:p-5">
               <h5 className="text-base font-medium text-gray-500 uppercase xsm:text-base">
-                Sales
+                Vendas
               </h5>
             </div>
             <div className="hidden p-3 text-center sm:block xl:p-5">
               <h5 className="text-base font-medium text-gray-500 uppercase xsm:text-base">
-                Conversion
+                Conversas
               </h5>
             </div>
           </div>

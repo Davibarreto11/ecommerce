@@ -24,7 +24,9 @@ export default function TopDashboard() {
         <div className="mt-4 flex items-end justify-between">
           <div>
             <h4 className="text-3xl font-semibold text-black">$3.456K</h4>
-            <span className="text-sm text-gray-500 font-medium">Total views</span>
+            <span className="text-sm text-gray-500 font-medium">
+              Total de visualizações
+            </span>
           </div>
 
           <span className="flex items-center gap-1 text-sm font-medium text-green-600">
@@ -70,7 +72,9 @@ export default function TopDashboard() {
         <div className="mt-4 flex items-end justify-between">
           <div>
             <h4 className="text-3xl font-semibold text-black">$45,2K</h4>
-            <span className="text-sm text-gray-500 font-medium">Total Profit</span>
+            <span className="text-sm text-gray-500 font-medium">
+              Total de lucros
+            </span>
           </div>
 
           <span className="flex items-center gap-1 text-sm font-medium text-green-600">
@@ -115,7 +119,9 @@ export default function TopDashboard() {
         <div className="mt-4 flex items-end justify-between">
           <div>
             <h4 className="text-3xl font-semibold text-black">2.450</h4>
-            <span className="text-sm text-gray-500 font-medium">Total Product</span>
+            <span className="text-sm text-gray-500 font-medium">
+              Total de produtos
+            </span>
           </div>
 
           <span className="flex items-center gap-1 text-sm font-medium text-green-600">
@@ -163,7 +169,9 @@ export default function TopDashboard() {
         <div className="mt-4 flex items-end justify-between">
           <div>
             <h4 className="text-3xl font-semibold text-black">3.456</h4>
-            <span className="text-sm text-gray-500 font-medium">Total Users</span>
+            <span className="text-sm text-gray-500 font-medium">
+              Total de usuários
+            </span>
           </div>
 
           <span className="flex items-center gap-1 text-sm font-medium text-green-600">

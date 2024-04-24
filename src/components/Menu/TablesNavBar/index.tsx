@@ -32,7 +32,7 @@ export default function TablesNavBar() {
             </clipPath>
           </defs>
         </svg>
-        Patient Table
+        Tabela paciente
       </Link>
     </li>
   );

@@ -11,7 +11,7 @@ export default function Navigation({ children }: any) {
   return (
     <div className="flex h-screen overflow-y-hidden">
       <aside
-        className={`absolute left-0 top-0 z-50 flex h-screen w-72 flex-col overflow-y-hidden bg-[#81b398] duration-300 ease-linear lg:static lg:translate-x-0 -translate-x-full ${
+        className={`absolute left-0 top-0 z-50 flex h-screen w-72 flex-col overflow-y-hidden bg-[#81b398] duration-300 ease-linear -translate-x-full ${
           sideBarVisible ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -28,7 +28,7 @@ export default function Navigation({ children }: any) {
             onClick={() => {
               setSideBarVisible(!sideBarVisible);
             }}
-            className="block lg:hidden"
+            className="block"
           >
             <svg
               className="fill-current"
@@ -56,14 +56,12 @@ export default function Navigation({ children }: any) {
       <div className="relative flex flex-1 flex-col">
         <header className="sticky top-0 z-40 flex w-full bg-white drop-shadow-md">
           <div className="flex flex-grow items-center justify-between px-4 py-4 shadow-sm md:px-6 2xl:px-11">
-            <div className="flex items-center gap-2 sm:gap-4 lg:hidden">
+            <div className="flex items-center gap-2 sm:gap-4">
               <button
                 onClick={() => {
                   setSideBarVisible(!sideBarVisible);
                 }}
-                className={`z-50 block rounded-sm border border-stroke bg-white p-1 ml-4 shadow-sm lg:hidden ${
-                  sideBarVisible ? "hidden" : ""
-                }`}
+                className={`z-50 block rounded-sm border border-stroke bg-white p-1 ml-4 shadow-sm`}
               >
                 <svg
                   xmlns="https://www.w3.org/2000/svg"
@@ -71,8 +69,7 @@ export default function Navigation({ children }: any) {
                   block
                   h-6
                   w-6
-                  cursor-pointer
-                  lg:hidden"
+                  cursor-pointer"
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
@@ -80,49 +77,60 @@ export default function Navigation({ children }: any) {
                   <path d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
               </button>
-              <a className="block flex-shrink-0 lg:hidden" href="/">
-                <Image src={require("@/assets/favicon-32x32.png")} alt="Logo" />
+              <a className="block flex-shrink-0" href="/">
+                <Image
+                  src={require("@/assets/blacklogo.png")}
+                  width={42}
+                  height={42}
+                  alt="Logo"
+                />
               </a>
-            </div>
-            <div className="hidden sm:block">
-              <form
-                action="https://formbold.com/s/unique_form_id"
-                method="POST"
+              <div
+                className={`hidden sm:block ${
+                  sideBarVisible ? "lg:ml-[200px]" : "ml-[50px]"
+                }`}
               >
-                <div className="relative">
-                  <button className="absolute left-0 top-[3px] -translate-x-1/2">
-                    <svg
-                      className="fill-body hover:fill-primary"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="#cccc"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M9.16666 3.33332C5.945 3.33332 3.33332 5.945 3.33332 9.16666C3.33332 12.3883 5.945 15 9.16666 15C12.3883 15 15 12.3883 15 9.16666C15 5.945 12.3883 3.33332 9.16666 3.33332ZM1.66666 9.16666C1.66666 5.02452 5.02452 1.66666 9.16666 1.66666C13.3088 1.66666 16.6667 5.02452 16.6667 9.16666C16.6667 13.3088 13.3088 16.6667 9.16666 16.6667C5.02452 16.6667 1.66666 13.3088 1.66666 9.16666Z"
-                        fill=""
-                      ></path>
-                      <path
-                        fillRule="evenodd"
-                        clipRule="evenodd"
-                        d="M13.2857 13.2857C13.6112 12.9603 14.1388 12.9603 14.4642 13.2857L18.0892 16.9107C18.4147 17.2362 18.4147 17.7638 18.0892 18.0892C17.7638 18.4147 17.2362 18.4147 16.9107 18.0892L13.2857 14.4642C12.9603 14.1388 12.9603 13.6112 13.2857 13.2857Z"
-                        fill=""
-                      ></path>
-                    </svg>
-                  </button>
-                  <input
-                    type="text"
-                    placeholder="Type to search..."
-                    className="w-full bg-transparent pl-6 pr-4 focus:outline-none xl:w-125"
-                  />
-                </div>
-              </form>
+                <form
+                  action="https://formbold.com/s/unique_form_id"
+                  method="POST"
+                >
+                  <div className="relative">
+                    <button className="absolute left-0 top-[3px] -translate-x-1/2">
+                      <svg
+                        className="fill-body hover:fill-primary"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="#cccc"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M9.16666 3.33332C5.945 3.33332 3.33332 5.945 3.33332 9.16666C3.33332 12.3883 5.945 15 9.16666 15C12.3883 15 15 12.3883 15 9.16666C15 5.945 12.3883 3.33332 9.16666 3.33332ZM1.66666 9.16666C1.66666 5.02452 5.02452 1.66666 9.16666 1.66666C13.3088 1.66666 16.6667 5.02452 16.6667 9.16666C16.6667 13.3088 13.3088 16.6667 9.16666 16.6667C5.02452 16.6667 1.66666 13.3088 1.66666 9.16666Z"
+                          fill=""
+                        ></path>
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M13.2857 13.2857C13.6112 12.9603 14.1388 12.9603 14.4642 13.2857L18.0892 16.9107C18.4147 17.2362 18.4147 17.7638 18.0892 18.0892C17.7638 18.4147 17.2362 18.4147 16.9107 18.0892L13.2857 14.4642C12.9603 14.1388 12.9603 13.6112 13.2857 13.2857Z"
+                          fill=""
+                        ></path>
+                      </svg>
+                    </button>
+                    <input
+                      type="text"
+                      placeholder="Pesquisar por nome do paciente..."
+                      className="w-full bg-transparent pl-6 pr-4 focus:outline-none sm:w-[300px] lg:w-[350px]"
+                    />
+                  </div>
+                </form>
+              </div>
             </div>
+
             <div className="flex items-center gap-3 sm:gap-7">
-              <ul className="flex items-center justify-around gap-3 sm:gap-4">
+              {/* Componentes do Header comentados */}
+              {/* <ul className="flex items-center justify-around gap-3 sm:gap-4">
                 <li>
                   <label
                     className="relative m-0 block h-8 w-16 rounded-full bg-[#cccccc]"
@@ -170,7 +178,7 @@ export default function Navigation({ children }: any) {
                 </li>
                 <Message />
                 <Notification />
-              </ul>
+              </ul> */}
 
               <Profile />
             </div>

@@ -13,59 +13,59 @@ import {
 
 const data = [
   {
-    name: "Jan",
-    Expenses: 800,
-    Income: 1000,
+    nome: "Jan",
+    Gastos: 800,
+    Renda: 1000,
   },
   {
-    name: "Feb",
-    Expenses: 1900,
-    Income: 2100,
+    nome: "Feb",
+    Gastos: 1900,
+    Renda: 2100,
   },
   {
-    name: "Mar",
-    Expenses: 2200,
-    Income: 900,
+    nome: "Mar",
+    Gastos: 2200,
+    Renda: 900,
   },
   {
-    name: "Apr",
-    Expenses: 2600,
-    Income: 1700,
+    nome: "Apr",
+    Gastos: 2600,
+    Renda: 1700,
   },
   {
-    name: "May",
-    Expenses: 2800,
-    Income: 1550,
+    nome: "May",
+    Gastos: 2800,
+    Renda: 1550,
   },
   {
-    name: "Jun",
-    Expenses: 1000,
-    Income: 1750,
+    nome: "Jun",
+    Gastos: 1000,
+    Renda: 1750,
   },
   {
-    name: "July",
-    Expenses: 2500,
-    Income: 1300,
+    nome: "July",
+    Gastos: 2500,
+    Renda: 1300,
   },
   {
-    name: "Aug",
-    Expenses: 2000,
-    Income: 1450,
+    nome: "Aug",
+    Gastos: 2000,
+    Renda: 1450,
   },
   {
-    name: "Oct",
-    Expenses: 1200,
-    Income: 1800,
+    nome: "Oct",
+    Gastos: 1200,
+    Renda: 1800,
   },
   {
     name: "Nov",
-    Expenses: 3100,
-    Income: 1200,
+    Gastos: 3100,
+    Renda: 1200,
   },
   {
     name: "Dez",
-    Expenses: 2300,
-    Income: 700,
+    Gastos: 2300,
+    Renda: 700,
   },
 ];
 
@@ -92,18 +92,18 @@ export default function Chart() {
             </defs>
             <XAxis dataKey="name" />
             <YAxis />
-            <CartesianGrid vertical={false}  />
+            <CartesianGrid vertical={false} />
             <Tooltip />
             <Area
               // type="monotone"
-              dataKey="Income"
+              dataKey="Renda"
               stroke="#8884d8"
               fillOpacity={1}
               fill="url(#colorUv)"
             />
             <Area
               // type="monotone"
-              dataKey="Expenses"
+              dataKey="Gastos"
               stroke="#82ca9d"
               fillOpacity={1}
               fill="url(#colorPv)"

@@ -2,24 +2,24 @@ import { Cell, Legend, Pie, PieChart, ResponsiveContainer } from "recharts";
 
 const data = [
   {
-    name: "Tablet",
-    Expenses: 800,
-    Income: 1000,
+    nome: "Tablet",
+    Gastos: 800,
+    Renda: 1000,
   },
   {
-    name: "Mobile",
-    Expenses: 1900,
-    Income: 2100,
+    nome: "Mobile",
+    Gastos: 1900,
+    Renda: 2100,
   },
   {
-    name: "Desktop",
-    Expenses: 2200,
-    Income: 900,
+    nome: "Desktop",
+    Gastos: 2200,
+    Renda: 900,
   },
   {
-    name: "Unknown",
-    Expenses: 2600,
-    Income: 1700,
+    nome: "Unknown",
+    Gastos: 2600,
+    Renda: 1700,
   },
 ];
 
@@ -33,8 +33,8 @@ export default function Chart() {
           <PieChart width={730} height={250}>
             <Pie
               data={data}
-              dataKey="Expenses"
-              nameKey="name"
+              dataKey="Gastos"
+              nameKey="nome"
               cx="50%"
               cy="50%"
               innerRadius={100}

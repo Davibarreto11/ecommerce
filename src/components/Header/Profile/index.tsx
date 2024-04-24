@@ -67,7 +67,7 @@ export default function Profile() {
                   fill=""
                 ></path>
               </svg>
-              My
+              Meu perfil
             </a>
           </li>
           <li>
@@ -88,7 +88,7 @@ export default function Profile() {
                   fill=""
                 ></path>
               </svg>
-              My Contacts
+              Meus contatos
             </a>
           </li>
           <li>
@@ -113,7 +113,7 @@ export default function Profile() {
                   fill=""
                 ></path>
               </svg>
-              Account Settings
+              Configurações
             </a>
           </li>
         </ul>
@@ -135,7 +135,7 @@ export default function Profile() {
               fill=""
             ></path>
           </svg>
-          Log Out
+          Sair
         </button>
       </div>
     </div>

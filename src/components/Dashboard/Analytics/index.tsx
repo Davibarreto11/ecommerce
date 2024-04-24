@@ -5,7 +5,9 @@ export default function Analytics() {
     <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pb-5 pt-7 shadow-default sm:px-7 xl:col-span-5">
       <div className="mb-3 justify-between gap-4 sm:flex">
         <div>
-          <h4 className="text-xl font-bold text-black">Visitors Analytics</h4>
+          <h4 className="text-xl font-bold text-black">
+            Análises dos visitantes
+          </h4>
         </div>
         <div>
           <div className="relative z-20 inline-block">
@@ -14,8 +16,8 @@ export default function Analytics() {
               id=""
               className="relative z-20 inline-flex appearance-none bg-transparent py-1 pl-3 pr-8 text-sm font-medium outline-none"
             >
-              <option value="">Monthly</option>
-              <option value="">Yearly</option>
+              <option value="">Mensal</option>
+              <option value="">Anual</option>
             </select>
             <span className="absolute right-3 top-1/2 z-10 -translate-y-1/2">
               <svg

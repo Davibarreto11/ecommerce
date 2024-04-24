@@ -1,4 +1,3 @@
-import Image from "next/image";
 import TopDashboard from "./TopDashboard";
 import Total from "./Total";
 import Profit from "./Profit";
