@@ -24,7 +24,7 @@ export default function ProfileNavBar() {
             fill=""
           ></path>
         </svg>
-        Profile
+        Meu perfil
       </Link>
     </li>
   );

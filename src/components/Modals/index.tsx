@@ -15,12 +15,12 @@ export default function Modals() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button>Modals</Button>
+        <Button>Modalidades</Button>
       </DialogTrigger>
 
       <DialogContent>
-        <DialogHeader>Modals</DialogHeader>
-        <DialogDescription>Filter modals</DialogDescription>
+        <DialogHeader>Modalidades</DialogHeader>
+        <DialogDescription>Filtrar Modalidades</DialogDescription>
         <form className="">
           <div className="flex items-start flex-col space-y-4">
             <div className="flex items-center gap-2 min-w-[100px]">
@@ -55,10 +55,10 @@ export default function Modals() {
           <DialogFooter>
             <DialogClose asChild>
               <Button type="button" variant="outline">
-                Cancel
+                Cancelar
               </Button>
             </DialogClose>
-            <Button type="submit">Filter</Button>
+            <Button type="submit">Filtrar</Button>
           </DialogFooter>
         </form>
       </DialogContent>
